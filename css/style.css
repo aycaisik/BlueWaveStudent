@@ -1,0 +1,212 @@
+header {
+    /* Set backgorund color, height, weight and display style of header section */
+    background-color: #78A6C8;
+    background-size: cover;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    /* Stick the header to the top of the viewport */
+    width: 100%;
+    /* Ensure it spans the entire width */
+    z-index: 100;
+    /* Ensure it stays on top of other elements */
+}
+
+/* Set properties of logo */
+.logo {
+    width: 70%;
+    height: 60%;
+}
+
+#title_div {
+    flex: 33;
+}
+
+body {
+    /* Set web page font size, font type and result section's background color */
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+    background-color: #E9EEF2;
+    font-size: 1vw;
+}
+
+h3 {
+    /* Set title 'result' properties */
+    font-size: 2.5em;
+    font-family: 'Kanit', sans-serif;
+    color: #326789;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    /* Set main section of web page  */
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.updateDiv {
+    /* Set properties of right side of webpage which contains action boxes*/
+    background-color: #E9EEF2;
+    flex: 3;
+    max-width: fit-content;
+}
+
+.resultDiv {
+    /* Set properties of left side of webpage that shows results */
+    color: #E65C4F;
+    flex: 5;
+}
+
+.studentDiv {
+    background-color: #E9EEF2;
+    flex: 3;
+    max-width: fit-content;
+}
+
+
+
+#title {
+    /* Set properties of title of header */
+    font-size: 3em;
+    font-family: 'Anton', sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Set properties of action bars from left side of webpage*/
+
+.box {
+    color: #fff;
+    box-shadow: 0 6px #393b3d;
+    border-radius: 20px;
+    background-color:rgba(50, 103, 137, 0.5);
+    margin: 2.5em;
+    padding: 3em;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+/* Set space to input fields*/
+
+form input {
+    margin: 5px;
+}
+
+/* Set all of buttons's style*/
+
+
+input[type="text"],
+input[type="number"],
+select {
+    border-radius: 10px;
+    /* Kenarları yuvarlağa yakın yap */
+    padding: 10px;
+    /* İçeriği kenara göre ayarla */
+    border: 5px inset #ccc;
+    /* Kenarlık rengi ve kalınlığı */
+    outline: none;
+    /* Kenarlık odaklandığında görünümü kaldır */
+    width: 92%;
+}
+
+/* Input alanlarına odaklandığında kenarlık rengi */
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus {
+    border-color: red;
+}
+
+/* Butonlar */
+.btn {
+    margin-right: 10px;
+    border: 1px solid #E65C4F;
+    border-radius: 17px;
+    background-color: #E65C4F;
+    color: white;
+    padding: 10px 16px;
+    font-size: 21px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Kanit', sans-serif;
+    box-shadow: 0 6px #44413C;
+}
+
+.btn:hover {
+    background-color: #f7796d;
+    border-color: #f7796d;
+    box-shadow: 0 4px #514D14;
+}
+
+.btn:active {
+    box-shadow: none;
+}
+
+/* Set properties of list buttons  */
+
+.listButtons {
+    padding: 1%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+/* Set properties  of main table */
+
+.resultTable {
+    padding: 6%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/* Set style of main table */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 2em;
+}
+
+
+td {
+    /*table data*/
+    padding: 10px;
+    font-size: 2.1em;
+    font-weight: bold;
+}
+
+th {
+    /*table head*/
+    background-color: #326789;
+    color: white;
+    padding: 10px;
+    text-align: left;
+}
+
+
+tbody tr:hover {
+    background-color: #d8d8d8;
+}
+
+

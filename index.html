@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css"> <!-- link to css file -->
+    <script src="./js/script.js"></script> <!-- link to javascript file -->
+    <title>Blue</title>
+</head>
+
+<body>
+    <!--header part-->
+    <header>
+
+        <div id="title_div"> <!-- title in header -->
+            <h1 id="title"> Blue Wave Student Management System</h1>
+        </div>
+        
+
+        <div id="logo"> <!-- logo created -->
+            <img src="https://raw.githubusercontent.com/aycaisik/picturesforweb/main/e15c55_4293b610e5494c449831bbfea0755707%7Emv2.png.webp"
+                alt="logo" class="logo">
+        </div>
+    </header>
+
+    <!--body part-->
+    <div id="main">
+        <div class="studentDiv">
+            <div class="searchStudent box">
+                <h2>Search</h2>
+                <label>Student Name:</label> <br>
+                <input type="text" name="search-studentName" id="search-studentName" required><br>
+                <input type="submit" class="btn" id="searchStudentButton" value="Search Student"
+                    onclick="searchStudentsByName(event)"><br>
+                <label>Lecture Name:</label> <br>
+                <input type="text" name="search-lectureName" id="search-lectureName" required><br>
+                <input type="submit" class="btn" id="searchLectureButton" value="Search Lecture"
+                    onclick="searchLecturesByName(event)">
+            </div>
+
+            <div class="addStudentToLecture box">
+                <h2>Add Student to Lecture</h2>
+                <label>Student ID:</label> <br>
+                <input type="text" name="add-studentId" id="add-studentId" required><br>
+                <label>Lecture Code:</label> <br>
+                <input type="text" name="add-lectureCode" id="add-lectureCode" required><br>
+                <label>Midterm Score:</label> <br>
+                <input type="number" min="0" max="100" name="midterm" id="midterm" required><br>
+                <label>Final Score:</label> <br>
+                <input type="number" name="final" id="final" required><br>
+                <div style="display: flex;">
+                    <input type="submit" class="btn" id="addStudentToLectureButton" value="Add"
+                        onclick="addSTLButton(event)">
+                    <input type="submit" class="btn" id="updateStudentToLectureButton" value="Update"
+                        onclick="updateSTLButton(event)">
+                </div>
+            </div>
+
+        </div>
+        <div class="updateDiv">
+
+
+            <div class="add and update box">
+
+                <h2>Add - Update Student</h2>
+                <label>Student Name:</label> <br>
+                <input type="text" name="studentName" id="studentName" required><br>
+                <label>Student Surname:</label> <br>
+                <input type="text" name="studentSurname" id="studentSurname" required><br>
+                <label>Student ID:</label> <br>
+                <input type="number" min="1" name="studentId" id="studentId" required><br>
+                <div style="display: flex;">
+                    <input type="submit" class="btn" id="addStudentButton" value="Add" onclick="addStudent(event)">
+                    <input type="submit" class="btn" id="updateStudentButton" value="Update"
+                        onclick="updateStudent(event)">
+                </div>
+                <br>
+
+                <h2>Add - Update Lecture</h2>
+                <label>Lecture Code:</label> <br>
+                <input type="text" name="lectureCode" id="lectureCode" required><br>
+                <label>Lecture Name:</label> <br>
+                <input type="text" name="lectureName" id="lectureName" required><br>
+                <label>Lecture pointSc</label> <br>
+                <select id="pointSc">
+                    <option value="10">10</option> <!--optional-->
+                    <option value="7">7</option>
+                </select>
+                <div style="display: flex;">
+                    <input type="submit" class="btn" id="addLectureButton" value="Add" onclick="addLec(event)">
+                    <input type="submit" class="btn" id="updateLectureButton" value="Update" onclick="updateLec(event)">
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- created result area of webpage -->
+        <div class="resultDiv">
+            <h3 class="resultHeader">Results</h3>
+            <div class="listButtons">
+                <button id="listStuButton" class="btn" onclick="createStuTable()">List Students</button>
+                <button id="listLecButton" class="btn" onclick="createLecTable()">List Lectures</button>
+            </div>
+
+            <!-- created a table for the results -->
+            <div class="resultTable">
+                <table id="resultTable">
+                    <thead id="resultTableHead">
+                    </thead>
+                    <tbody id="resultTableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+
+
+
+
+</html>
